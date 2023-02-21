@@ -1,75 +1,169 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    background: url(https://wallpaperaccess.com/full/2451252.jpg) no-repeat center center fixed;
+    font-family: 'Poppins', sans-serif;
+    background: url(/assets/img/pagebackimage.png) no-repeat center center fixed;
     background-size: cover;
     background-clip:content-box;
     height: 100vh;
     overflow: hidden;
 }
 
-
-/*Header*/
-
-
-span{
-    background-color: #818181;
-    color: #fff;
-    border-radius: 50px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+/*Dashboard*/
+.dashboard-container{
+    
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-span:hover{
-    background-color: #f1f1f1;
-    color: #111;
+.dashboard{
+    background-color: #151720;
+    border-radius: 10px;
+    border: 4px solid #1d284d;
+    padding: 40px;
+    height:700px;
+    width: 1700px;
 }
 
-/*Nav*/
-.sidenav{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+
+.box-container{
+    height: 710px;
+    width: 1600px;
+    margin-top: 560px;
+    margin-left: 135.5px;
+    position: relative;
 }
 
-.sidenav a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+
+
+
+.dashboard-box-calender {
+    width: calc(33.33% - 20px);
+    height: 300px;
+    margin: 10px;
+    margin-top: -595px;
+    margin-left: 1080.5px;
+    background-color: #343F56;
+    box-shadow: 0 2px 4px rgba (0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.sidenav a:hover{
-    color: #f1f1f1;
+.dashboard-box2 {
+    width: calc(22.33% - 20px);
+    height: 200px;
+    margin: 10px;
+    margin-top: -307.5px;
+    margin-left: 46.2%;
+    background-color: #343F56;
+    box-shadow: 0 2px 4px rgba (0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.sidenav .closebtn{
+.dashboard-box-payday {
+    width: calc(11.33% - 20px);
+    height: 125px;
+    margin: 10px;
+    margin-top: -210.5px;
+    margin-left: 25%;
+    background-color: #343F56;
+    box-shadow: 0 2px 4px rgba (0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+
+.dashboard-box-misc2 { /*Decide what this box is for*/
+    width: calc(11.33% - 20px);
+    height: 125px;
+    margin: 10px;
+    margin-top: -135px;
+    margin-left: 35.5%;
+    background-color: #343F56;
+    box-shadow: 0 2px 4px rgba (0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dashboard-box-tasks { /*Decide what this box is for*/
+    width: calc(16.33% - 20px);
+    height: 400px;
+    margin: 10px;
+    margin-top: 180px;
+    margin-left: 1350.5px;
+    background-color: #343F56;
+    box-shadow: 0 2px 4px rgba (0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+/*Navigation Bar*/
+
+.nav-container{
+    width: 200px;
+    background: transparent;
+    height: 781px;
+    position: relative;
+    left: -30px;
+    top: -712.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-container:after{
+    content: "";
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    border:#151720 1px solid;
+    bottom: 0;
+    right: 1px;
+    width: 2px;
+    height: 100%;
+    margin-top: -5px;
+    margin-right: 0%;
+    background: #343F56;
 }
 
-#main{
-    transition: margin-left .5s;
-    padding: 20px;
+.nav-item{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    top: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-@media screen and (max-height: 450px){
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+.nav-item:hover{
+    background: #fff;
+    color: #333;
+}
+
+.nav-item i {
+    margin-right: 10px;
+}
+
+.nav-container img{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    padding: 2px;
+    border-radius: 50%;
+    border-color: #1d284d;
+    border-style: solid;
+    margin-bottom: 20px;
 }
 
 
