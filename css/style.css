@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    background: url(/assets/img/pagebackimage.png) no-repeat center center fixed;
+    background: url(https://www.hdwallpapers.in/download/brown_and_green_square_4k_hd_abstract-HD.jpg) no-repeat center center fixed;
     background-size: cover;
     background-clip:content-box;
     height: 100vh;
@@ -20,9 +20,11 @@ body{
 }
 
 .dashboard{
-    background-color: #151720;
-    border-radius: 10px;
-    border: 4px solid #1d284d;
+    background-color: #492d1f91;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #F9DBBB;
+    position: fixed;
     padding: 40px;
     height:700px;
     width: 1700px;
@@ -32,25 +34,13 @@ body{
 .box-container{
     height: 710px;
     width: 1560px;
-    margin-top: 560px;
+    top: -315px;
+    border-radius: 15px;
+    margin-top: 280px;
     margin-left: 175.5px;
     position: relative;
 }
 
-
-
-
-.dashboard-box-calender {
-    width: calc(33.33% - 20px);
-    height: 300px;
-    margin: 10px;
-    margin-top: -595px;
-    margin-left: 1055.5px;
-    background-color: #343F56;
-    box-shadow: 0 2px 4px rgba (0,0,0,0.1);
-    border-radius: 5px;
-    overflow: hidden;
-}
 
 .dashboard-box2 {
     width: calc(22.33% - 20px);
@@ -58,9 +48,11 @@ body{
     margin: 10px;
     margin-top: -307.5px;
     margin-left: 46.2%;
-    background-color: #343F56;
+    background-color: #4e3621;
     box-shadow: 0 2px 4px rgba (0,0,0,0.1);
     border-radius: 5px;
+    border-style: solid;
+    border-color: #F9DBBB;
     overflow: hidden;
 }
 
@@ -70,9 +62,11 @@ body{
     margin: 10px;
     margin-top: -210.5px;
     margin-left: 25.6%;
-    background-color: #343F56;
+    background-color: #4e3621;
     box-shadow: 0 2px 4px rgba (0,0,0,0.1);
     border-radius: 5px;
+    border-style: solid;
+    border-color: #F9DBBB;
     overflow: hidden;
 }
 
@@ -84,21 +78,25 @@ body{
     margin: 10px;
     margin-top: -135px;
     margin-left: 35.9%;
-    background-color: #343F56;
+    background-color: #4e3621;
     box-shadow: 0 2px 4px rgba (0,0,0,0.1);
     border-radius: 5px;
+    border-style: solid;
+    border-color: #F9DBBB;
     overflow: hidden;
 }
 
-.dashboard-box-tasks { /*Decide what this box is for*/
+.dashboard-box-tasks { 
     width: calc(16.33% - 20px);
     height: 400px;
     margin: 10px;
-    margin-top: 180px;
-    margin-left: 1320.5px;
-    background-color: #343F56;
+    margin-top: -160px;
+    margin-left: 1315px;
+    background-color: #4e3621;
     box-shadow: 0 2px 4px rgba (0,0,0,0.1);
     border-radius: 5px;
+    border-style: solid;
+    border-color: #F9DBBB;
     overflow: hidden;
 }
 /*Navigation Bar*/
@@ -106,29 +104,15 @@ body{
 .nav-container{
     width: 200px;
     background: transparent;
-    height: 781px;
+    height: 770px;
     position: relative;
-    left: -30px;
-    top: -710px;
+    left: -35px;
+    top: -1025px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
     overflow: hidden;
-}
-
-.nav-container:after{
-    content: "";
-    position: absolute;
-    top: 0;
-    border:#151720 1px solid;
-    bottom: 0;
-    right: -20px;
-    width: 2px;
-    height: 100%;
-    margin-top: -5px;
-    margin-bottom: -5px;
-    margin-right: 10%;
-    background: #343F56;
 }
 
 .nav-item{
@@ -162,7 +146,7 @@ body{
     top: 50px;
     padding: 2px;
     border-radius: 50%;
-    border-color: #1d284d;
+    border-color: #F9DBBB;
     border-style: solid;
     margin-bottom: 20px;
 }
