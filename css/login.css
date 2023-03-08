@@ -59,6 +59,15 @@ h2 {
   border-bottom: 2px solid;
 }
 
+input[type="submit"] {
+    font-weight: bold;
+    background: deepskyblue;
+    color: #fff;
+    letter-spacing: 2px;
+    height: 45px;
+    cursor: pointer;
+}
+
 .input-box label {
   position: absolute;
   top: 50%;
@@ -96,6 +105,7 @@ input:valid ~ label {
   margin: -15px 0 15px;
   font-size: 0.9em;
   color: #fff;
+  
   display: flex;
   justify-content: center;
 }
@@ -103,6 +113,7 @@ input:valid ~ label {
   margin-right: 3px;
 }
 .forget label a {
+  margin-left: 30px;
   color: #fff;
   text-decoration: none;
 }
@@ -132,9 +143,20 @@ button {
 
 .register p a {
   text-decoration: none;
+  padding: 15px;
   color: #fff;
   font-weight: 600;
 }
 .register p a:hover {
   text-decoration: underline;
+}
+
+#demo {
+    color: red;
+    font-family: sans-serif;
+    top: 27em;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    text-transform: capitalize;
 }

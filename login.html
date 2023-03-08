@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/login.css" />
+    <script src="validation.js"></script>
     <title>CortexBoard - Login</title>
   </head>
   <body>
@@ -14,7 +15,7 @@
     <section>
       <div class="form-box">
         <div class="form-value">
-          <form action="">
+          <form action="" name="frm" onsubmit="return valid()">
             <h2>Login</h2>
             <div class="input-box">
               <ion-icon name="mail-outline"></ion-icon>
@@ -38,6 +39,7 @@
             </div>
           </form>
         </div>
+        <p id="demo">Happy</p>
       </div>
     </section>
     <script
